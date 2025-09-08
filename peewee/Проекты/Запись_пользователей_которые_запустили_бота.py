@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-import asyncio
 from peewee import SqliteDatabase, Model, CharField, IntegerField
 
 # Настройка подключения к базе данных SQLite (или другой базы данных)
 db = SqliteDatabase(f"scr/db/database.db")
+
 
 class BotUsers(Model):
     """
@@ -20,7 +20,6 @@ class BotUsers(Model):
     class Meta:
         database = db
         table_name = "bot_users"
-
 
 
 async def save_bot_user(message):
