@@ -9,3 +9,8 @@
 Работа с proxy
 
 - [Работа с proxy](Работа_с_proxy/Работа_с_proxy.py)
+
+Работа c aiogram 3
+Документация: https://docs.aiogram.dev/en/v3.22.0/api/index.html
+
+- [Ответ на команды пользователя (например: /balance)](aiogram_3/Команды.py)
