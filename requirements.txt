@@ -1,0 +1,9 @@
+flet~=0.80.3
+loguru~=0.7.3
+peewee~=3.19.0
+Telethon~=1.42.0
+aiogram~=3.24.0
+dotenv~=0.9.9
+python-dotenv~=1.1.1
+openai~=2.15.0
+openpyxl~=3.1.5
