@@ -116,7 +116,7 @@ def main():
         logger.exception("Произошла ошибка")
         print(f"\n❌ Ошибка: {e}")
 
-    print("\n" + "="*50 + "\n")
+    print("\n" + "=" * 50 + "\n")
 
     # Пример 2: Несколько текстов (batch)
     texts = [

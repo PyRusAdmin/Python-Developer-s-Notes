@@ -1,6 +1,8 @@
+# -*- coding: utf-8 -*-
 from multiprocessing import Process
 import time
 import os
+
 
 def eat_ram(mb: int):
     """Потребляет указанное количество МБ памяти без нагрузки на CPU"""
@@ -8,12 +10,14 @@ def eat_ram(mb: int):
     print(f"PID {os.getpid()}: выделено {mb} МБ RAM")
     time.sleep(3600)  # Удерживаем память 1 час (без нагрузки на CPU)
 
+
 if __name__ == '__main__':
     processes = []
     mb_per_process = 50  # МБ на процесс
+    number_processes = 10  # Количество процессов
 
     # Запускаем 4 процесса → ~2 ГБ RAM
-    for i in range(10):
+    for i in range(number_processes):
         p = Process(target=eat_ram, args=(mb_per_process,))
         p.start()
         processes.append(p)

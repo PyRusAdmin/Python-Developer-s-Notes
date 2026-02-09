@@ -1,0 +1,9 @@
+Структура .env
+
+```text
+PROXY_USER=
+PROXY_PASSWORD=
+PROXY_IP=
+PROXY_PORT=
+OPENROUTER_API_KEY=
+```
