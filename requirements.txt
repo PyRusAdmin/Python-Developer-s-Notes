@@ -1,3 +1,7 @@
+python-socks
+thefuzz
+scheduler
+groq
 requests
 flet~=0.80.3
 loguru~=0.7.3
