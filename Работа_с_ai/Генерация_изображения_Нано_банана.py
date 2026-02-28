@@ -164,8 +164,10 @@ def generate_image(prompt: str, model: str = "google/gemini-2.5-flash-image",
 
 if __name__ == '__main__':
     # Пример использования
+    input_prompt = input("\nВведите ваш промт:\t\t").strip().lower()
+
     success = generate_image(
-        prompt="Generate a beautiful sunset over mountains with purple clouds",
+        prompt=input_prompt,
         aspect_ratio="16:9",  # Поддерживаемые: 1:1, 16:9, 9:16, 4:3, 3:4 и др.
         image_size="1K"       # Поддерживаемые: 0.5K (только Gemini), 1K, 2K, 4K
     )
