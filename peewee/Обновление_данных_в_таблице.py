@@ -1,4 +1,5 @@
 """Запись в базу данных пользователей, запустивших бота вызвав команду /start."""
+from peewee import *  # https://docs.peewee-orm.com/en/latest/index.html
 
 
 class Person(Model):
@@ -19,6 +20,7 @@ class Person(Model):
 
 
 """Установка языка пользователя"""
+
 
 def set_user_lang(id_user: int, lang: str):
     """Обновляет язык пользователя по Telegram ID"""

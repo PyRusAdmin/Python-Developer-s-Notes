@@ -3,6 +3,7 @@ from peewee import *  # https://docs.peewee-orm.com/en/latest/index.html
 # Настраиваем синхронную базу данных SQLite
 db = SqliteDatabase(f"src/core/database/{DB_NAME}")
 
+
 class Person(Model):
     """
     Хранит информацию о пользователях, запустивших Telegram-бота вызвав команду /start.
@@ -39,15 +40,15 @@ def register_user(user_data) -> None:
             "created_at": user_data.get("date"),  # Время запуска
         }
     )
-    
-    
+
+
 # Формируем данные пользователя
 user_data = {
-    "id": message.from_user.id, # ID пользователя
-    "first_name": message.from_user.first_name, # Имя пользователя
-    "last_name": message.from_user.last_name, # Фамилия пользователя
-    "username": message.from_user.username, # Username пользователя
-    "lang": 'ru', # Язык пользователя (Сделать проверку на наличие в базе данных)
+    "id": message.from_user.id,  # ID пользователя
+    "first_name": message.from_user.first_name,  # Имя пользователя
+    "last_name": message.from_user.last_name,  # Фамилия пользователя
+    "username": message.from_user.username,  # Username пользователя
+    "lang": 'ru',  # Язык пользователя (Сделать проверку на наличие в базе данных)
     "date": message.date,  # Дата и время регистрации
 }
 # Записываем данные пользователя в базу данных src/core/database/database.db

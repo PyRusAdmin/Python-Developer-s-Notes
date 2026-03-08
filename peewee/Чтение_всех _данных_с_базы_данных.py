@@ -1,5 +1,6 @@
+from peewee import *  # https://docs.peewee-orm.com/en/latest/index.html
 
-
+db = SqliteDatabase("people.db")
 
 
 async def read_from_db():

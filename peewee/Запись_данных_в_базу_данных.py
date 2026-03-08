@@ -1,7 +1,6 @@
-# https://docs.peewee-orm.com/en/latest/index.html
 from datetime import date
 
-from peewee import *
+from peewee import *  # https://docs.peewee-orm.com/en/latest/index.html
 
 db = SqliteDatabase("people.db")
 

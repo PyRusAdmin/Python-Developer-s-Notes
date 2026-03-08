@@ -1,5 +1,4 @@
-# https://docs.peewee-orm.com/en/latest/index.html
-from peewee import *  # Импортируем peewee
+from peewee import *  # Импортируем peewee # https://docs.peewee-orm.com/en/latest/index.html
 
 db = SqliteDatabase("people.db")  # Создаем базу данных "people.db"
 

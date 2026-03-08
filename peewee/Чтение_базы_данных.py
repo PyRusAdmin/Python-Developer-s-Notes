@@ -1,7 +1,4 @@
-# https://docs.peewee-orm.com/en/latest/index.html
-from datetime import date  # Импортируем date
-
-from peewee import *  # Импортируем peewee
+from peewee import *  # Импортируем peewee # https://docs.peewee-orm.com/en/latest/index.html
 
 db = SqliteDatabase("people.db")  # Создаем базу данных "people.db"
 

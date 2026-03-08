@@ -1,7 +1,4 @@
-# https://docs.peewee-orm.com/en/latest/index.html
-from datetime import date  # Импортируем date
-from peewee import fn
-from peewee import *  # Импортируем peewee
+from peewee import *  # Импортируем peewee # https://docs.peewee-orm.com/en/latest/index.html
 
 db = SqliteDatabase("people.db")  # Создаем базу данных "people.db"
 
@@ -28,7 +25,6 @@ db.create_tables([Person, Pet])  # Создаем таблицы, если их 
 # Получить всех людей, отсортированных по имени
 for person in Person.select().order_by(Person.name):
     print(person.name, person.birthday)
-
 
 # Отсортировать по имени в обратном порядке (Z -> A)
 for person in Person.select().order_by(Person.name.desc()):

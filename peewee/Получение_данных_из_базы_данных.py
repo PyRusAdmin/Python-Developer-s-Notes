@@ -1,6 +1,5 @@
-
-
 """Запись в базу данных пользователей, запустивших бота вызвав команду /start."""
+from peewee import *  # https://docs.peewee-orm.com/en/latest/index.html
 
 
 class Person(Model):
