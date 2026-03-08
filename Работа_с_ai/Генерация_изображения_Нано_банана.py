@@ -169,7 +169,7 @@ if __name__ == '__main__':
     success = generate_image(
         prompt=input_prompt,
         aspect_ratio="16:9",  # Поддерживаемые: 1:1, 16:9, 9:16, 4:3, 3:4 и др.
-        image_size="1K"       # Поддерживаемые: 0.5K (только Gemini), 1K, 2K, 4K
+        image_size="1K"  # Поддерживаемые: 0.5K (только Gemini), 1K, 2K, 4K
     )
 
     if success:

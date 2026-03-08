@@ -239,8 +239,8 @@ if __name__ == '__main__':
     success = edit_image(
         image_path=str(selected),
         prompt=edit_prompt,
-        aspect_ratio="16:9",   # 1:1, 16:9, 9:16, 4:3, 3:4
-        image_size="1K"        # 0.5K, 1K, 2K, 4K
+        aspect_ratio="16:9",  # 1:1, 16:9, 9:16, 4:3, 3:4
+        image_size="1K"  # 0.5K, 1K, 2K, 4K
     )
 
     if success:
