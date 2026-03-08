@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+
 def save_base64_image(base64_string, filename="generated_image.png"):
     """Сохраняет base64 изображение в файл."""
     if "base64," in base64_string:
@@ -100,9 +101,9 @@ if __name__ == "__main__":
 
         for model in models:
             try:
-                print(f"\n{'='*60}")
+                print(f"\n{'=' * 60}")
                 print(f"🧪 Тестирую модель: {model}")
-                print(f"{'='*60}")
+                print(f"{'=' * 60}")
 
                 images = generate_image_polza(prompt, model=model)
 
@@ -118,4 +119,5 @@ if __name__ == "__main__":
     except Exception as e:
         print(f"\n❌ Общая ошибка: {e}")
         import traceback
+
         traceback.print_exc()
